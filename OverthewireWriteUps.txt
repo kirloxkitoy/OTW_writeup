@@ -1,0 +1,21 @@
+#Overthewire WriteUps
+
+Level0
+Connect to SSH using 
+ssh -l bandit0 -p 2220 bandit.labs.overthewire.org flag:boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Level1
+Check the contents of - 
+cat /home/bandit1/-  flag:CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+Level2
+Check the contents of spaces in this filename
+cat "spaces in this filename" flag:UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Level3
+Check inhere directory and check .hidden file
+cat .hidden flag:pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+Level4
+Check inhere directory and check the -file0* for the flag.
+cat /home/bandit4/inhere/-file0* flag:koReBOKuIDDepwhWk7jZC0RTdopnAYKh
