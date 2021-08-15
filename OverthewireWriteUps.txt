@@ -19,3 +19,13 @@ cat .hidden flag:pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 Level4
 Check inhere directory and check the -file0* for the flag.
 cat /home/bandit4/inhere/-file0* flag:koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+Level5
+password is stored on the inhere directory and the file has the following properties
+human-readable
+1033 bytes in size
+not executable
+find inhtere -size 1033c flag:DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+
+Level6
