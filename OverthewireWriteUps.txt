@@ -36,3 +36,20 @@ find / -group bandit7 -size 33c  cat /var/lib/dpkg/info/bandit7.password flag:HK
 Level7
 password for the next level is stored in the file data.txt next to the word millionth.
 cat data.txt  | grep millionth flag:cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+
+Level8
+password for the next level is stored in the file data.txt its the unique keyword only.
+cat data.txt | tr -s ' ' '\n' | sort | uniq -c | sort -r | awk '{print $2,$1} flag: UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+
+Level9
+password for the next level is stored in the file data.txt in one of the few human readable strings, preceded by several '=' characters
+
+strings --data data.txt | grep = flag:truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+
+Level 10
+The password for the next level is stored in the file data.txt which contains base64 encoded data
+
+base64 -d data.txt flag:IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
