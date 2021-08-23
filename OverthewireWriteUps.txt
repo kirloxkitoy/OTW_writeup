@@ -259,6 +259,9 @@ gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
 Level 22:
 This is a cronjob view you want to check the cron job that is to run on daily.
 
+cat /etc/cron.d/cronjob_bandit22
+./cronjob_bandit22
 
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 flag: Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
