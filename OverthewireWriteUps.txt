@@ -265,3 +265,44 @@ cat /etc/cron.d/cronjob_bandit22
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 flag: Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+Level23:
+This is a cronjob view the script that will run
+
+cat /usr/bin/cronjob_bandit23.sh
+
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+
+<shell$>myname=bandit23
+echo I am user $myname | md5sum | cut -d ' ' -f 1
+8ca319486bfbbc3663ea0fbe81326349
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+
+flag:jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+
+Level 24
+
+Create your first bash script
+
+-Create it on /tmp/ directory
+-Create a shell script using vim or vi test.sh
+-Create a password file that will contatin the password.
+-copy your test.sh to /var/spool/bandit24
+-chmod both files to 777 to access it.
+
+
+#!/bin/bash
+
+cat /etc/bandit_pass/bandit24 > /tmp/champs/password
+
+continuosly cat the password file
+
+flag: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
